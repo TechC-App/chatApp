@@ -9,7 +9,19 @@
 import UIKit
 
 class ChatViewController: UIViewController {
-    
+    // チャットに表示されるメッセージリスト
+    let messageList = [
+        "A: こんにちは",
+        "B: こんにちは",
+        "A: 今日はいい天気ですね",
+        "B: メッセージ4",
+        "A: メッセージ5",
+        "A: メッセージ6",
+        "B: メッセージ7",
+        "B: メッセージ8",
+        "A: メッセージ9",
+        "A: メッセージ10",
+    ]
 }
 
 // DataSourceの中身を定義するために、UITableViewDataSourceに適合させる
@@ -17,8 +29,7 @@ extension ChatViewController: UITableViewDataSource {
     
     // テーブルのセクション毎の行数を定義
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // 一旦固定で10行にする
-        return 10
+        return messageList.count
     }
     
     // セル毎のオブジェクトを返す
@@ -26,9 +37,9 @@ extension ChatViewController: UITableViewDataSource {
         
         let cell = UITableViewCell(style: .Default, reuseIdentifier: "chatCell")
         
-        // Optionalへのアクセス
-        // ? でアクセスすると、nilの時は無視する(その行のそれ以降の処理は行わない)
-        cell.textLabel?.text = "test"
+        // 何番目のセルかはindexPathから取得できる
+        let num = indexPath.row
+        cell.textLabel?.text = messageList[num]
         
         return cell
     }

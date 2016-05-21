@@ -34,10 +34,10 @@
             </objects>
             <point key="canvasLocation" x="205" y="469"/>
         </scene>
-        <!--View Controller-->
+        <!--Chat View Controller-->
         <scene sceneID="kUs-lA-q9i">
             <objects>
-                <viewController id="nD0-t3-QmB" sceneMemberID="viewController">
+                <viewController id="nD0-t3-QmB" customClass="ChatViewController" customModule="ChatApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oMX-gb-JQG"/>
                         <viewControllerLayoutGuide type="bottom" id="P8K-e6-hai"/>
@@ -49,6 +49,10 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wDY-SZ-aq1">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="418"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="nD0-t3-QmB" id="cdH-Ot-pzE"/>
+                                    <outlet property="delegate" destination="nD0-t3-QmB" id="BB8-cD-VCb"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

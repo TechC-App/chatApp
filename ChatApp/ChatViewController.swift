@@ -9,8 +9,26 @@
 import UIKit
 
 class ChatViewController: UIViewController {
+    
+    // チャットメッセージ表示テーブル
+    @IBOutlet weak var tableView: UITableView!
+    
+    // テキスト入力
+    @IBOutlet weak var textField: UITextField!
+    
+    // 送信ボタンタップ時イベント
+    @IBAction func didTapSendButton(sender: UIButton) {
+        // A ?? B => Aの値が存在すればその値をそのまま、存在しない(=nil)場合は、Bの値を使う
+        // イメージ: A.exist ? A : B
+        let message = textField.text ?? ""
+        messageList.append(message)
+        
+        // テーブルをリロードする
+        tableView.reloadData()
+    }
+    
     // チャットに表示されるメッセージリスト
-    let messageList = [
+    var messageList = [
         "A: こんにちは",
         "B: こんにちは",
         "A: 今日はいい天気ですね",

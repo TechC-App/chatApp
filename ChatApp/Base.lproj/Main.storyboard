@@ -54,11 +54,27 @@
                                     <outlet property="delegate" destination="nD0-t3-QmB" id="BB8-cD-VCb"/>
                                 </connections>
                             </tableView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tWc-Hj-qGz">
+                                <rect key="frame" x="0.0" y="442" width="233" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q0A-aD-k1L">
+                                <rect key="frame" x="262" y="442" width="30" height="30"/>
+                                <state key="normal" title="送信"/>
+                                <connections>
+                                    <action selector="didTapSendButton:" destination="nD0-t3-QmB" eventType="touchUpInside" id="ksA-HA-wXJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="480"/>
+                    <connections>
+                        <outlet property="tableView" destination="wDY-SZ-aq1" id="ng3-dy-fzS"/>
+                        <outlet property="textField" destination="tWc-Hj-qGz" id="cHK-3W-Rrb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="47J-Oi-hhU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

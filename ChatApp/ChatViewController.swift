@@ -25,21 +25,26 @@ class ChatViewController: UIViewController {
         
         // テーブルをリロードする
         tableView.reloadData()
+        
+        // テーブルの表示位置を更新
+        
+        // テーブルに表示されている行数を取得
+        let rowCount = tableView.numberOfRowsInSection(0) // セクションは1個固定なので0指定で良い
+        // 表示される行数 = メッセージの数なので以下でもOK
+        // let rowCount = messageList.count
+        
+        // 一番下のセル位置
+        let indexPath = NSIndexPath(forRow: rowCount - 1, inSection: 0)
+        tableView.scrollToRowAtIndexPath(indexPath, atScrollPosition: .Bottom, animated: true)
+        
+        // メッセージ入力欄をクリアする
+        textField.text = ""
     }
     
     // チャットに表示されるメッセージリスト
-    var messageList = [
-        "A: こんにちは",
-        "B: こんにちは",
-        "A: 今日はいい天気ですね",
-        "B: メッセージ4",
-        "A: メッセージ5",
-        "A: メッセージ6",
-        "B: メッセージ7",
-        "B: メッセージ8",
-        "A: メッセージ9",
-        "A: メッセージ10",
-    ]
+    var messageList = [String]()
+    // 下の書き方でもOK
+    // var messageList: [String] = []
 }
 
 // DataSourceの中身を定義するために、UITableViewDataSourceに適合させる

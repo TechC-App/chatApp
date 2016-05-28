@@ -18,10 +18,8 @@ class ViewController: UIViewController {
         let socket = SocketIOClient(socketURL: NSURL(string: "http://52.68.248.110:8000")!, options: [.Log(true), .ForcePolling(true)])
         
         socket.on("connect") {data, ack in
+            socket.emit("c_send_message", withItems: ["hoge"])
             print("socket connected")
-        }
-        socket.on("list") { data, hoge in
-            print("list")
         }
         
         socket.on("currentAmount") {data, ack in

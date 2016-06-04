@@ -1,12 +1,12 @@
 PODS:
-  - Socket.IO-Client-Swift (6.1.2)
+  - SwiftWebSocket (2.6.2)
 
 DEPENDENCIES:
-  - Socket.IO-Client-Swift (~> 6.1.2)
+  - SwiftWebSocket
 
 SPEC CHECKSUMS:
-  Socket.IO-Client-Swift: 60a60e8bfd7b16bc57c90ff6329e9f536b5eacdd
+  SwiftWebSocket: 2bb9dda75c87f64eaf9768131141857ca8611aac
 
-PODFILE CHECKSUM: 1d18f8b2a50d9e02fb3fef21effddd29cdaba326
+PODFILE CHECKSUM: ef5b638fc4fb841d3ab0403d4d2f10eba3e331cd
 
 COCOAPODS: 1.0.0

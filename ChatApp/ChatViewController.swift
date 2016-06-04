@@ -98,7 +98,8 @@ extension ChatViewController: UITableViewDataSource {
 
 extension ChatViewController: UITextFieldDelegate {
     func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
-        // something
+        // TextFieldの内容が変わった際の処理
+        print(string)
         return true
     }
 }

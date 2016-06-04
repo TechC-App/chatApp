@@ -1,12 +1,22 @@
 PODS:
-  - SwiftWebSocket (2.6.2)
+  - SwiftWebSocket (2.5.0)
 
 DEPENDENCIES:
-  - SwiftWebSocket
+  - SwiftWebSocket (from `https://github.com/tidwall/SwiftWebSocket.git`, branch `swift/2.0`)
+
+EXTERNAL SOURCES:
+  SwiftWebSocket:
+    :branch: swift/2.0
+    :git: https://github.com/tidwall/SwiftWebSocket.git
+
+CHECKOUT OPTIONS:
+  SwiftWebSocket:
+    :commit: 430dc231733074d8314dd24616c3e5f6c3a9eca6
+    :git: https://github.com/tidwall/SwiftWebSocket.git
 
 SPEC CHECKSUMS:
-  SwiftWebSocket: 2bb9dda75c87f64eaf9768131141857ca8611aac
+  SwiftWebSocket: 168cbde980dc3b5bac925a3d8186f82b3e87768e
 
-PODFILE CHECKSUM: ef5b638fc4fb841d3ab0403d4d2f10eba3e331cd
+PODFILE CHECKSUM: 6d40239f24c8cba055991bf085aa8701567d4937
 
 COCOAPODS: 1.0.0

@@ -10,6 +10,8 @@ import UIKit
 import SwiftWebSocket
 
 class ChatViewController: UIViewController {
+    // WebSocketクラスのインスタンス
+    let webSocket = WebSocket()
     
     // チャットメッセージ表示テーブル
     @IBOutlet weak var tableView: UITableView!
@@ -54,16 +56,15 @@ class ChatViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // WebSocketクラスのインスタンスを生成
-        let webSocket = WebSocket()
-        
         webSocket.event.open = {
             // 通信接続完了時の処理
-            print("connect success.")
+            print("connection opened.")
+            
         }
         
         webSocket.event.close = { code, reason, clean in
             // 通信切断後の処理
+            print("connection closed")
         }
         
         webSocket.event.error = { err in
@@ -73,6 +74,9 @@ class ChatViewController: UIViewController {
         
         webSocket.event.message = { msg in
             // メッセージ受信時の処理
+            let message = msg as! String
+            self.messageList.append(message)
+            self.tableView.reloadData()
         }
         
         webSocket.open("ws://172.19.72.103:8080")

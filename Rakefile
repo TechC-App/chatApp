@@ -9,6 +9,7 @@ namespace :server do
 				ws.onopen do |handshake|
 					puts 'Connection opened'
 					connections << ws
+					connections.each { |c| c.send 'new connection is opened.' }
 				end
 
 				ws.onclose do

@@ -17,6 +17,9 @@ class ChatViewController: UIViewController {
     // テキスト入力
     @IBOutlet weak var textField: UITextField!
     
+    // 送信ボタン
+    @IBOutlet weak var sendButton: UIButton!
+    
     // 送信ボタンタップ時イベント
     @IBAction func didTapSendButton(sender: UIButton) {
         // A ?? B => Aの値が存在すればその値をそのまま、存在しない(=nil)場合は、Bの値を使う
@@ -56,6 +59,7 @@ class ChatViewController: UIViewController {
         
         webSocket.event.open = {
             // 通信接続完了時の処理
+            print("connect success.")
         }
         
         webSocket.event.close = { code, reason, clean in
@@ -71,7 +75,7 @@ class ChatViewController: UIViewController {
             // メッセージ受信時の処理
         }
         
-        webSocket.open("http://localhost")
+        webSocket.open("ws://172.19.72.103:8080")
     }
 }
 
@@ -99,7 +103,13 @@ extension ChatViewController: UITableViewDataSource {
 extension ChatViewController: UITextFieldDelegate {
     func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
         // TextFieldの内容が変わった際の処理
-        print(string)
+        
+        // 変更後の文字列が空かどうか判定(簡易版)
+        let isEmpty = string.isEmpty && textField.text!.characters.count == 1
+        
+        // 中身が空になる時は、送信ボタンを押せないようにする
+        sendButton.enabled = !isEmpty
+        
         return true
     }
 }

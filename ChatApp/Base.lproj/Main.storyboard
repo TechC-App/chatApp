@@ -140,6 +140,7 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="480"/>
                     <connections>
+                        <outlet property="sendButton" destination="Q0A-aD-k1L" id="SAw-DW-W5M"/>
                         <outlet property="tableView" destination="wDY-SZ-aq1" id="ng3-dy-fzS"/>
                         <outlet property="textField" destination="tWc-Hj-qGz" id="cHK-3W-Rrb"/>
                     </connections>

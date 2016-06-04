@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftWebSocket
 
 class ChatViewController: UIViewController {
     
@@ -45,6 +46,33 @@ class ChatViewController: UIViewController {
     var messageList = [String]()
     // 下の書き方でもOK
     // var messageList: [String] = []
+    
+    // 画面読み込み時に呼ばれる (基本的には1回のみ)
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // WebSocketクラスのインスタンスを生成
+        let webSocket = WebSocket()
+        
+        webSocket.event.open = {
+            // 通信接続完了時の処理
+        }
+        
+        webSocket.event.close = { code, reason, clean in
+            // 通信切断後の処理
+        }
+        
+        webSocket.event.error = { err in
+            // 通信エラー時の処理
+            print(err)
+        }
+        
+        webSocket.event.message = { msg in
+            // メッセージ受信時の処理
+        }
+        
+        webSocket.open("http://localhost")
+    }
 }
 
 // DataSourceの中身を定義するために、UITableViewDataSourceに適合させる
@@ -65,5 +93,12 @@ extension ChatViewController: UITableViewDataSource {
         cell.textLabel?.text = messageList[num]
         
         return cell
+    }
+}
+
+extension ChatViewController: UITextFieldDelegate {
+    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+        // something
+        return true
     }
 }

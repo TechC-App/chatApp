@@ -7,81 +7,106 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		218CC691C1F28AB89C5E2BCDC6767920 /* SwiftWebSocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F51EBB9321B9DEFAD37EEE5AE868CBCC /* SwiftWebSocket-dummy.m */; };
-		3BC25F43BB69B8C87B77BF192ACBA331 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		6829BB69DF37BCEBE192A43B80695035 /* Pods-ChatApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2060AB2083A0CCA6AC707758924797F7 /* Pods-ChatApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		68C53DD802AF4712806CC5171FC082F8 /* SwiftWebSocket-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BBD759019C6D253CE57FC78E04A9EB32 /* SwiftWebSocket-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		77D2DEA7024E7803779341FF00CC347C /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6509172355879CDC0D431E1A47B65B /* WebSocket.swift */; };
-		CA98FD1BEB9D37546B7CCDF805A8E669 /* Pods-ChatApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC14ACD481A8E57EE0F6BB134DC6735 /* Pods-ChatApp-dummy.m */; };
-		F5B39ADE467DC1B517CE439AB22EB6D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		00542D636C75B2D5A1A70DC59024468B /* MilkCocoa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5DD0D5932ADA5889E56A03E32CFABA /* MilkCocoa.swift */; };
+		109CA0EE7CA358975C2CC6C1C856AEC2 /* Pods-ChatApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2060AB2083A0CCA6AC707758924797F7 /* Pods-ChatApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		126F9A8CCAA2300A76A222CD027BA564 /* CocoaMQTTMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DD65FAC5F29E38978EF499712E02F4 /* CocoaMQTTMessage.swift */; };
+		2A0AC8C6277C4B526833FEE4C69C06A1 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4E0E67DAD9C0C49A5CE03792423350 /* GCDAsyncSocket.m */; };
+		2E89A5A07C5449846D28A43A12FB3F60 /* MilkCocoa-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = EB1CDDADADE68C9DF59488D1F72068D5 /* MilkCocoa-Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34080346141B7AB42BE0578D0FBAA053 /* GCDAsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = E09B166CBEA5A463DEA41AECD1D55B3B /* GCDAsyncSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		435F220228F55C18AB2C97F7D97556AA /* MSWeakTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = B025E8AA722B3F0C947C7A987ADA6EF4 /* MSWeakTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		564C8EDEE98958906395400D0E801364 /* milkcocoa-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A2140DDB40977609CC35B2FEAC6C1C /* milkcocoa-dummy.m */; };
+		6B8304B669EC3E95FF84F32966E192C9 /* CocoaMQTT.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FD526E21FD07A146A87051D7389E0D /* CocoaMQTT.swift */; };
+		741A7841C95225B696CDC1610AECBC91 /* Pods-ChatApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC14ACD481A8E57EE0F6BB134DC6735 /* Pods-ChatApp-dummy.m */; };
+		8A6B28960B9A377430042629F5E742A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		A3823A11F79FF611EC8CFA08CC0DDC86 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		A788329DD859369021699D2ACF7EE580 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E22B04FA6F7C4E6972133283B49A5C0 /* DataStore.swift */; };
+		BB91191F26AAE5EED8C614E8856ED6FF /* MSWeakTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5320FD102D3F8763EAA6AB78CCD19DE7 /* MSWeakTimer.m */; };
+		C17274BE277D3745F94E7E26034A4875 /* MilkCocoa.h in Headers */ = {isa = PBXBuildFile; fileRef = 952E7C4002A19D2065A60171925C134F /* MilkCocoa.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4D55C53A20B6C6BF0E131453648E109 /* CocoaMQTTFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27E880598CB9AD4935C6AB215C68732 /* CocoaMQTTFrame.swift */; };
+		E1FFFE8A05F527B29EAE1E93129C8160 /* milkcocoa-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E355ACCFE5A8D188A630C1E1FE682D89 /* milkcocoa-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B7855C25B7C84BEE4FA36BFE0A23D4B0 /* PBXContainerItemProxy */ = {
+		DC2A9995AA010439FF365FFA8A7F0FB9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 688FC47E40F85C119A87792AC342BA23;
-			remoteInfo = SwiftWebSocket;
+			remoteGlobalIDString = 336C6ECC8AAE16931D079F78B0DA58F5;
+			remoteInfo = milkcocoa;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0B7B943C011E00DEB86C3AB589EA353E /* SwiftWebSocket.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftWebSocket.xcconfig; sourceTree = "<group>"; };
+		13F39E7097BBC53C7EAE77C96CC41AC8 /* milkcocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = milkcocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1551EACF20B7E7B470D2AD568EC4EC5E /* milkcocoa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = milkcocoa.xcconfig; sourceTree = "<group>"; };
 		2060AB2083A0CCA6AC707758924797F7 /* Pods-ChatApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ChatApp-umbrella.h"; sourceTree = "<group>"; };
-		3CF5E40A5087242123586BE13F60B587 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3F6509172355879CDC0D431E1A47B65B /* WebSocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSocket.swift; path = Source/WebSocket.swift; sourceTree = "<group>"; };
+		24A2140DDB40977609CC35B2FEAC6C1C /* milkcocoa-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "milkcocoa-dummy.m"; sourceTree = "<group>"; };
+		2B5DD0D5932ADA5889E56A03E32CFABA /* MilkCocoa.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MilkCocoa.swift; path = MilkCocoa/MilkCocoa.swift; sourceTree = "<group>"; };
 		4CDDCA577CE08DC7C868A277B113132A /* Pods-ChatApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ChatApp-acknowledgements.plist"; sourceTree = "<group>"; };
-		52CE00AB6C5E2400698EF323696B947A /* SwiftWebSocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftWebSocket-prefix.pch"; sourceTree = "<group>"; };
-		63EF95E610BDB77AACEFE94E05986BDD /* SwiftWebSocket.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftWebSocket.modulemap; sourceTree = "<group>"; };
+		5320FD102D3F8763EAA6AB78CCD19DE7 /* MSWeakTimer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSWeakTimer.m; path = MilkCocoa/MSWeakTimer.m; sourceTree = "<group>"; };
+		5B9B3490E2D3AC1B6328A2253B840327 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		68FB0A9499F7628E913A600254ADD12C /* Pods-ChatApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ChatApp.modulemap"; sourceTree = "<group>"; };
 		8265F0CFC51006CD451A1E87EDB71896 /* Pods-ChatApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ChatApp.debug.xcconfig"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		952E7C4002A19D2065A60171925C134F /* MilkCocoa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MilkCocoa.h; path = MilkCocoa/MilkCocoa.h; sourceTree = "<group>"; };
 		97F4E24D535CAFDAB1A01CB007CE4E4E /* Pods-ChatApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ChatApp-frameworks.sh"; sourceTree = "<group>"; };
 		991474B1A4BC6D7B8B359BAC52EB7148 /* Pods-ChatApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ChatApp-resources.sh"; sourceTree = "<group>"; };
-		9FA695E3D4B98CE9617F5CC0DCC80C3A /* SwiftWebSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftWebSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BBD759019C6D253CE57FC78E04A9EB32 /* SwiftWebSocket-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftWebSocket-umbrella.h"; sourceTree = "<group>"; };
+		9E22B04FA6F7C4E6972133283B49A5C0 /* DataStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataStore.swift; path = MilkCocoa/DataStore.swift; sourceTree = "<group>"; };
+		B025E8AA722B3F0C947C7A987ADA6EF4 /* MSWeakTimer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSWeakTimer.h; path = MilkCocoa/MSWeakTimer.h; sourceTree = "<group>"; };
+		B27E880598CB9AD4935C6AB215C68732 /* CocoaMQTTFrame.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CocoaMQTTFrame.swift; path = MilkCocoa/CocoaMQTTFrame.swift; sourceTree = "<group>"; };
+		B3C7540F1362D213E95439011E85173E /* Pods_ChatApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0734BD566F763E21C905966472D875C /* Pods-ChatApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ChatApp.release.xcconfig"; sourceTree = "<group>"; };
 		CA715E29720FB406DA5E4CB9BB487CB5 /* Pods-ChatApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ChatApp-acknowledgements.markdown"; sourceTree = "<group>"; };
 		CB3739F64DE21FF01F7BBA362267BC9F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D754C7C5A3944C7B61D194731140F133 /* milkcocoa-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "milkcocoa-prefix.pch"; sourceTree = "<group>"; };
+		E09B166CBEA5A463DEA41AECD1D55B3B /* GCDAsyncSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDAsyncSocket.h; path = MilkCocoa/GCDAsyncSocket.h; sourceTree = "<group>"; };
+		E0FD526E21FD07A146A87051D7389E0D /* CocoaMQTT.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CocoaMQTT.swift; path = MilkCocoa/CocoaMQTT.swift; sourceTree = "<group>"; };
+		E355ACCFE5A8D188A630C1E1FE682D89 /* milkcocoa-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "milkcocoa-umbrella.h"; sourceTree = "<group>"; };
+		EB1CDDADADE68C9DF59488D1F72068D5 /* MilkCocoa-Bridging-Header.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MilkCocoa-Bridging-Header.h"; path = "MilkCocoa/MilkCocoa-Bridging-Header.h"; sourceTree = "<group>"; };
 		ECC14ACD481A8E57EE0F6BB134DC6735 /* Pods-ChatApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ChatApp-dummy.m"; sourceTree = "<group>"; };
-		F51EBB9321B9DEFAD37EEE5AE868CBCC /* SwiftWebSocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftWebSocket-dummy.m"; sourceTree = "<group>"; };
-		FD25E4C9062BBB866FAB025B965271A1 /* Pods_ChatApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED4E0E67DAD9C0C49A5CE03792423350 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncSocket.m; path = MilkCocoa/GCDAsyncSocket.m; sourceTree = "<group>"; };
+		F712E78F1773180FF65CF7996162439E /* milkcocoa.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = milkcocoa.modulemap; sourceTree = "<group>"; };
+		F8DD65FAC5F29E38978EF499712E02F4 /* CocoaMQTTMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CocoaMQTTMessage.swift; path = MilkCocoa/CocoaMQTTMessage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4CDDBA89861F420EA3A7A633ECD0FF72 /* Frameworks */ = {
+		70EA4E7634092B39D2E2556C665B4690 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5B39ADE467DC1B517CE439AB22EB6D6 /* Foundation.framework in Frameworks */,
+				8A6B28960B9A377430042629F5E742A6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A4C874EDF0A8C53C6D8D53CA2ED11E7B /* Frameworks */ = {
+		FAEE38B0FB621EE2CFDA7DDF82823C30 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BC25F43BB69B8C87B77BF192ACBA331 /* Foundation.framework in Frameworks */,
+				A3823A11F79FF611EC8CFA08CC0DDC86 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		09761139D131AEFB798F1DBD21179163 /* Support Files */ = {
+		0684A574509DDDE09E212B1C0CE067A3 /* milkcocoa */ = {
 			isa = PBXGroup;
 			children = (
-				3CF5E40A5087242123586BE13F60B587 /* Info.plist */,
-				63EF95E610BDB77AACEFE94E05986BDD /* SwiftWebSocket.modulemap */,
-				0B7B943C011E00DEB86C3AB589EA353E /* SwiftWebSocket.xcconfig */,
-				F51EBB9321B9DEFAD37EEE5AE868CBCC /* SwiftWebSocket-dummy.m */,
-				52CE00AB6C5E2400698EF323696B947A /* SwiftWebSocket-prefix.pch */,
-				BBD759019C6D253CE57FC78E04A9EB32 /* SwiftWebSocket-umbrella.h */,
+				E0FD526E21FD07A146A87051D7389E0D /* CocoaMQTT.swift */,
+				B27E880598CB9AD4935C6AB215C68732 /* CocoaMQTTFrame.swift */,
+				F8DD65FAC5F29E38978EF499712E02F4 /* CocoaMQTTMessage.swift */,
+				9E22B04FA6F7C4E6972133283B49A5C0 /* DataStore.swift */,
+				E09B166CBEA5A463DEA41AECD1D55B3B /* GCDAsyncSocket.h */,
+				ED4E0E67DAD9C0C49A5CE03792423350 /* GCDAsyncSocket.m */,
+				952E7C4002A19D2065A60171925C134F /* MilkCocoa.h */,
+				2B5DD0D5932ADA5889E56A03E32CFABA /* MilkCocoa.swift */,
+				EB1CDDADADE68C9DF59488D1F72068D5 /* MilkCocoa-Bridging-Header.h */,
+				B025E8AA722B3F0C947C7A987ADA6EF4 /* MSWeakTimer.h */,
+				5320FD102D3F8763EAA6AB78CCD19DE7 /* MSWeakTimer.m */,
+				8F4BD57A8E78969EBDBB222B14449977 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/SwiftWebSocket";
+			path = milkcocoa;
 			sourceTree = "<group>";
 		};
 		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
@@ -92,15 +117,6 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		47B1EAFA5ED4F4AB0CA52E72EF2283F6 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				FD25E4C9062BBB866FAB025B965271A1 /* Pods_ChatApp.framework */,
-				9FA695E3D4B98CE9617F5CC0DCC80C3A /* SwiftWebSocket.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		499E8E7EAA8C7C96A397F8FEBE1E0E80 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -109,12 +125,13 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		5314DCC22EDD0AAE1F875E6EDFC63399 /* Pods */ = {
+		607DF03899A73BBE0EE378AC56D91571 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F69462AA96133243DE5430C7202D9B55 /* SwiftWebSocket */,
+				13F39E7097BBC53C7EAE77C96CC41AC8 /* milkcocoa.framework */,
+				B3C7540F1362D213E95439011E85173E /* Pods_ChatApp.framework */,
 			);
-			name = Pods;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -122,8 +139,8 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				5314DCC22EDD0AAE1F875E6EDFC63399 /* Pods */,
-				47B1EAFA5ED4F4AB0CA52E72EF2283F6 /* Products */,
+				A3F58ADACB8565648358B78736AD8521 /* Pods */,
+				607DF03899A73BBE0EE378AC56D91571 /* Products */,
 				499E8E7EAA8C7C96A397F8FEBE1E0E80 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -146,6 +163,28 @@
 			path = "Target Support Files/Pods-ChatApp";
 			sourceTree = "<group>";
 		};
+		8F4BD57A8E78969EBDBB222B14449977 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5B9B3490E2D3AC1B6328A2253B840327 /* Info.plist */,
+				F712E78F1773180FF65CF7996162439E /* milkcocoa.modulemap */,
+				1551EACF20B7E7B470D2AD568EC4EC5E /* milkcocoa.xcconfig */,
+				24A2140DDB40977609CC35B2FEAC6C1C /* milkcocoa-dummy.m */,
+				D754C7C5A3944C7B61D194731140F133 /* milkcocoa-prefix.pch */,
+				E355ACCFE5A8D188A630C1E1FE682D89 /* milkcocoa-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/milkcocoa";
+			sourceTree = "<group>";
+		};
+		A3F58ADACB8565648358B78736AD8521 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0684A574509DDDE09E212B1C0CE067A3 /* milkcocoa */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,70 +193,65 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F69462AA96133243DE5430C7202D9B55 /* SwiftWebSocket */ = {
-			isa = PBXGroup;
-			children = (
-				3F6509172355879CDC0D431E1A47B65B /* WebSocket.swift */,
-				09761139D131AEFB798F1DBD21179163 /* Support Files */,
-			);
-			path = SwiftWebSocket;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		00A987C348F461B28AF10AE1A819C15B /* Headers */ = {
+		08B2C71B638C4AFD053C6A2B39459C81 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6829BB69DF37BCEBE192A43B80695035 /* Pods-ChatApp-umbrella.h in Headers */,
+				34080346141B7AB42BE0578D0FBAA053 /* GCDAsyncSocket.h in Headers */,
+				2E89A5A07C5449846D28A43A12FB3F60 /* MilkCocoa-Bridging-Header.h in Headers */,
+				E1FFFE8A05F527B29EAE1E93129C8160 /* milkcocoa-umbrella.h in Headers */,
+				C17274BE277D3745F94E7E26034A4875 /* MilkCocoa.h in Headers */,
+				435F220228F55C18AB2C97F7D97556AA /* MSWeakTimer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B3A714EDB391D388F96312309D681835 /* Headers */ = {
+		F13F0489B743A255B83B706CC8B69840 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68C53DD802AF4712806CC5171FC082F8 /* SwiftWebSocket-umbrella.h in Headers */,
+				109CA0EE7CA358975C2CC6C1C856AEC2 /* Pods-ChatApp-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2847B3339CFE2D14D24EE5B5B2FA175C /* Pods-ChatApp */ = {
+		336C6ECC8AAE16931D079F78B0DA58F5 /* milkcocoa */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ACA3FABC5270651622882D479ED1F6EA /* Build configuration list for PBXNativeTarget "Pods-ChatApp" */;
+			buildConfigurationList = 1100540A0B5BF1F6851AB9843871DD96 /* Build configuration list for PBXNativeTarget "milkcocoa" */;
 			buildPhases = (
-				0CAC49C3C2501C2D2C3DFE2BA6BC8062 /* Sources */,
-				A4C874EDF0A8C53C6D8D53CA2ED11E7B /* Frameworks */,
-				00A987C348F461B28AF10AE1A819C15B /* Headers */,
+				02FF29EF4D27CF34436DEF0FF4C5C4C0 /* Sources */,
+				FAEE38B0FB621EE2CFDA7DDF82823C30 /* Frameworks */,
+				08B2C71B638C4AFD053C6A2B39459C81 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				98403F0CB2EF13CAFA7B46280B308AF0 /* PBXTargetDependency */,
+			);
+			name = milkcocoa;
+			productName = milkcocoa;
+			productReference = 13F39E7097BBC53C7EAE77C96CC41AC8 /* milkcocoa.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		73564F33D2FD0D839DAD67543CA892C8 /* Pods-ChatApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 883BE5E1184D3A5EFCF0C0A78429E903 /* Build configuration list for PBXNativeTarget "Pods-ChatApp" */;
+			buildPhases = (
+				5E412EACBFE993D67C621F61D0B06FD2 /* Sources */,
+				70EA4E7634092B39D2E2556C665B4690 /* Frameworks */,
+				F13F0489B743A255B83B706CC8B69840 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32060B89602B0D0AA4FA66BF80B0393B /* PBXTargetDependency */,
 			);
 			name = "Pods-ChatApp";
 			productName = "Pods-ChatApp";
-			productReference = FD25E4C9062BBB866FAB025B965271A1 /* Pods_ChatApp.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		688FC47E40F85C119A87792AC342BA23 /* SwiftWebSocket */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F1C2F4E3205BBFE4B9A55C5251D0710E /* Build configuration list for PBXNativeTarget "SwiftWebSocket" */;
-			buildPhases = (
-				6CC579308765A743DFDE912CDB5F021B /* Sources */,
-				4CDDBA89861F420EA3A7A633ECD0FF72 /* Frameworks */,
-				B3A714EDB391D388F96312309D681835 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SwiftWebSocket;
-			productName = SwiftWebSocket;
-			productReference = 9FA695E3D4B98CE9617F5CC0DCC80C3A /* SwiftWebSocket.framework */;
+			productReference = B3C7540F1362D213E95439011E85173E /* Pods_ChatApp.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -237,114 +271,53 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 47B1EAFA5ED4F4AB0CA52E72EF2283F6 /* Products */;
+			productRefGroup = 607DF03899A73BBE0EE378AC56D91571 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2847B3339CFE2D14D24EE5B5B2FA175C /* Pods-ChatApp */,
-				688FC47E40F85C119A87792AC342BA23 /* SwiftWebSocket */,
+				336C6ECC8AAE16931D079F78B0DA58F5 /* milkcocoa */,
+				73564F33D2FD0D839DAD67543CA892C8 /* Pods-ChatApp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0CAC49C3C2501C2D2C3DFE2BA6BC8062 /* Sources */ = {
+		02FF29EF4D27CF34436DEF0FF4C5C4C0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA98FD1BEB9D37546B7CCDF805A8E669 /* Pods-ChatApp-dummy.m in Sources */,
+				6B8304B669EC3E95FF84F32966E192C9 /* CocoaMQTT.swift in Sources */,
+				C4D55C53A20B6C6BF0E131453648E109 /* CocoaMQTTFrame.swift in Sources */,
+				126F9A8CCAA2300A76A222CD027BA564 /* CocoaMQTTMessage.swift in Sources */,
+				A788329DD859369021699D2ACF7EE580 /* DataStore.swift in Sources */,
+				2A0AC8C6277C4B526833FEE4C69C06A1 /* GCDAsyncSocket.m in Sources */,
+				564C8EDEE98958906395400D0E801364 /* milkcocoa-dummy.m in Sources */,
+				00542D636C75B2D5A1A70DC59024468B /* MilkCocoa.swift in Sources */,
+				BB91191F26AAE5EED8C614E8856ED6FF /* MSWeakTimer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6CC579308765A743DFDE912CDB5F021B /* Sources */ = {
+		5E412EACBFE993D67C621F61D0B06FD2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				218CC691C1F28AB89C5E2BCDC6767920 /* SwiftWebSocket-dummy.m in Sources */,
-				77D2DEA7024E7803779341FF00CC347C /* WebSocket.swift in Sources */,
+				741A7841C95225B696CDC1610AECBC91 /* Pods-ChatApp-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		98403F0CB2EF13CAFA7B46280B308AF0 /* PBXTargetDependency */ = {
+		32060B89602B0D0AA4FA66BF80B0393B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = SwiftWebSocket;
-			target = 688FC47E40F85C119A87792AC342BA23 /* SwiftWebSocket */;
-			targetProxy = B7855C25B7C84BEE4FA36BFE0A23D4B0 /* PBXContainerItemProxy */;
+			name = milkcocoa;
+			target = 336C6ECC8AAE16931D079F78B0DA58F5 /* milkcocoa */;
+			targetProxy = DC2A9995AA010439FF365FFA8A7F0FB9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		2B05A8B4D235C3EDF0371984805C12E8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8265F0CFC51006CD451A1E87EDB71896 /* Pods-ChatApp.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-ChatApp/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ChatApp/Pods-ChatApp.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_ChatApp;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		3C6155DAB3096ABF0519B29E620240D0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C0734BD566F763E21C905966472D875C /* Pods-ChatApp.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-ChatApp/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ChatApp/Pods-ChatApp.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_ChatApp;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		47BEF9D903506B003EA5C2B249729489 /* Debug */ = {
+		46EE69AF77A148AF92860F097B5698B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -379,46 +352,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				ONLY_ACTIVE_ARCH = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		75030B31EFBFE36BCBACAC5D0E80B1C2 /* Debug */ = {
+		6F41EB075BB65EF830D345D9A36451E0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0B7B943C011E00DEB86C3AB589EA353E /* SwiftWebSocket.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftWebSocket/SwiftWebSocket-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftWebSocket/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftWebSocket/SwiftWebSocket.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SwiftWebSocket;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		7DD9E3EED718B3674564EC6D85D5AFD0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0B7B943C011E00DEB86C3AB589EA353E /* SwiftWebSocket.xcconfig */;
+			baseConfigurationReference = C0734BD566F763E21C905966472D875C /* Pods-ChatApp.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -429,14 +372,18 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftWebSocket/SwiftWebSocket-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftWebSocket/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-ChatApp/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftWebSocket/SwiftWebSocket.modulemap";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ChatApp/Pods-ChatApp.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SwiftWebSocket;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ChatApp;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -445,7 +392,7 @@
 			};
 			name = Release;
 		};
-		AAF678CED40D3499169D10F63CA0719E /* Release */ = {
+		7A156876A8824526ED495550DF098FA1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -476,39 +423,132 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
+		80709CC92096400F3B48ABD7D971E894 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1551EACF20B7E7B470D2AD568EC4EC5E /* milkcocoa.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/milkcocoa/milkcocoa-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/milkcocoa/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/milkcocoa/milkcocoa.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = milkcocoa;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		884569B7077DFDC6FB7A1DA7B259B73D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8265F0CFC51006CD451A1E87EDB71896 /* Pods-ChatApp.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ChatApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ChatApp/Pods-ChatApp.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ChatApp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EE871F3715437F7FEA326A929CB9BCC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1551EACF20B7E7B470D2AD568EC4EC5E /* milkcocoa.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/milkcocoa/milkcocoa-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/milkcocoa/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/milkcocoa/milkcocoa.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = milkcocoa;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1100540A0B5BF1F6851AB9843871DD96 /* Build configuration list for PBXNativeTarget "milkcocoa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE871F3715437F7FEA326A929CB9BCC8 /* Debug */,
+				80709CC92096400F3B48ABD7D971E894 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				47BEF9D903506B003EA5C2B249729489 /* Debug */,
-				AAF678CED40D3499169D10F63CA0719E /* Release */,
+				46EE69AF77A148AF92860F097B5698B1 /* Debug */,
+				7A156876A8824526ED495550DF098FA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ACA3FABC5270651622882D479ED1F6EA /* Build configuration list for PBXNativeTarget "Pods-ChatApp" */ = {
+		883BE5E1184D3A5EFCF0C0A78429E903 /* Build configuration list for PBXNativeTarget "Pods-ChatApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2B05A8B4D235C3EDF0371984805C12E8 /* Debug */,
-				3C6155DAB3096ABF0519B29E620240D0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F1C2F4E3205BBFE4B9A55C5251D0710E /* Build configuration list for PBXNativeTarget "SwiftWebSocket" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				75030B31EFBFE36BCBACAC5D0E80B1C2 /* Debug */,
-				7DD9E3EED718B3674564EC6D85D5AFD0 /* Release */,
+				884569B7077DFDC6FB7A1DA7B259B73D /* Debug */,
+				6F41EB075BB65EF830D345D9A36451E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

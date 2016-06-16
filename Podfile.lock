@@ -1,12 +1,22 @@
 PODS:
-  - SwiftWebSocket (2.6.2)
+  - milkcocoa (1.0)
 
 DEPENDENCIES:
-  - SwiftWebSocket
+  - milkcocoa (from `https://github.com/mokemoko/milkcocoa-swift-sdk.git`, tag `1.0`)
+
+EXTERNAL SOURCES:
+  milkcocoa:
+    :git: https://github.com/mokemoko/milkcocoa-swift-sdk.git
+    :tag: '1.0'
+
+CHECKOUT OPTIONS:
+  milkcocoa:
+    :git: https://github.com/mokemoko/milkcocoa-swift-sdk.git
+    :tag: '1.0'
 
 SPEC CHECKSUMS:
-  SwiftWebSocket: 2bb9dda75c87f64eaf9768131141857ca8611aac
+  milkcocoa: 3ed222d2c9c90327de1a8ac1a0ff93b402f97c2d
 
-PODFILE CHECKSUM: adbdd901c7092fa012a10ced7e26742587ffd4ec
+PODFILE CHECKSUM: 1411971b33de43f3a6c381f4b3c802dd5d757c39
 
 COCOAPODS: 1.0.0

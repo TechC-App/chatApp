@@ -1,0 +1,6 @@
+framework module milkcocoa {
+  umbrella header "milkcocoa-umbrella.h"
+
+  export *
+  module * { export * }
+}

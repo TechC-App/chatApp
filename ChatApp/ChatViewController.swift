@@ -7,8 +7,12 @@
 //
 
 import UIKit
+import milkcocoa
 
 class ChatViewController: UIViewController {
+    
+    var mc: MilkCocoa?
+    var ds: DataStore?
     
     // チャットメッセージ表示テーブル
     @IBOutlet weak var tableView: UITableView!
@@ -18,11 +22,31 @@ class ChatViewController: UIViewController {
     
     // 送信ボタンタップ時イベント
     @IBAction func didTapSendButton(sender: UIButton) {
-        // A ?? B => Aの値が存在すればその値をそのまま、存在しない(=nil)場合は、Bの値を使う
-        // イメージ: A.exist ? A : B
         let message = textField.text ?? ""
-        messageList.append(message)
+        ds!.send(["message":message])
         
+    }
+    
+    // チャットに表示されるメッセージリスト
+    var messageList = [String]()
+    // 下の書き方でもOK
+    // var messageList: [String] = []
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        mc = MilkCocoa(app_id: "guitarim5iraya", host: "guitarim5iraya.mlkcca.com") { c in
+            print("hoge")
+            self.ds = c.dataStore("test")
+            self.ds!.on("send") { data in
+                self.messageList.append((data.getValue("value") as! Dictionary)["message"]!)
+                self.updateTable()
+            }
+        }
+        
+    }
+    
+    func updateTable() {
         // テーブルをリロードする
         tableView.reloadData()
         
@@ -40,11 +64,6 @@ class ChatViewController: UIViewController {
         // メッセージ入力欄をクリアする
         textField.text = ""
     }
-    
-    // チャットに表示されるメッセージリスト
-    var messageList = [String]()
-    // 下の書き方でもOK
-    // var messageList: [String] = []
 }
 
 // DataSourceの中身を定義するために、UITableViewDataSourceに適合させる
